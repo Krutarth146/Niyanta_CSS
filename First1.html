@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types</title>
+    <style>
+        p{
+            color: blue;
+        }
+
+        h1{
+            background-color: aqua;
+        }
+
+        .niyanta{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            background-color: aquamarine;
+        }
+
+        #kru{
+            color: green;
+            background-color: bisque;
+        }
+
+        h2{
+            color: magenta;
+        }
+        
+        h2.n1{
+            color: green;
+        }
+        
+        div.Container h2{
+            color: blue;
+        }
+
+
+        p.manoj{
+            background-color: blueviolet;
+        }
+
+        #royal{
+            font-size: 32px;
+        }
+
+        div.ramesh p.manoj{
+            color: burlywood;
+            background-color: cadetblue;
+        }
+        
+        /* Internal CSS  
+        Comment in CSS */   
+    </style>
+
+    <link rel="stylesheet" href="/first1.css" type="text/css">
+</head>
+<body>
+    <!-- Comment in Html -->
+    <p style="font-size: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, atque?</p>
+
+    <p>Lorem ipsum dolor sit.</p>
+
+
+    <h1>Hello This is H1</h1>
+    <h1>Hello This is second H1</h1>
+    <h1 class="niyanta">Hello This is second H1</h1>
+    <h1>Hello This is second H1</h1>
+    <h1 class="niyanta">Hello This is second H1</h1>
+    <h1 id="kru">Hello This is second H1</h1>
+
+    <div >
+        <h2>This is H2 Under div - 1</h2>
+        <h2 class="n1">This is H2 Under div - 2</h2>
+    </div>
+
+    <div class="Container">
+        <h2>This is H2 Under 2div - 1</h2>
+        <h2 class="n1">This is H2 Under container Class - 2</h2>
+    </div>
+
+    <h2>This is H2 Outside div</h2>
+
+
+    <div>
+        <p class="manoj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, inventore?</p>
+        <p class="manoj" id="royal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, inventore?</p>
+    </div>
+
+    <div class="ramesh">
+        <p class="manoj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, inventore?</p>
+        <p class="manoj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, inventore?</p>
+    </div>
+
+    <h3 class="manoj">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, accusamus. </h3>
+    
+    
+    Inline CSS >>>>>> Highest Priority
+    Id Selector  >> Class Selector  >> Element Selector
+
+</body>
+</html>
