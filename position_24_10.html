@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+
+    <style>
+        body{
+            height: 200vh;
+        }
+
+        .main{
+            width: 600px;
+            height: 600px;
+            background-color: chocolate;
+            margin: 200px;
+            padding: 50px;
+            position: relative;
+        }
+
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: bisque;
+            /* margin: 180px auto; */
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .b1{
+            background-color: red;
+            /* position: static By Default*/
+            position: relative;
+            top: 0px;
+            left: -20px;
+            /* right: 40px; */
+        }
+
+        .b2{
+            background-color: blue;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+        }
+
+        .b3{
+            width: 150px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: green;
+            position: fixed;
+            top: 10px;
+            right: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b3:hover{
+            background-color: yellow;
+            color: brown;
+        }
+
+        .b4{
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.box.b$*4 -->
+    <div class="main">
+        <div class="container">
+            <div class="box b1">Relative</div>
+            <div class="box b2">Absolute</div>
+            <div class="box b3">Fixed</div>
+            <div class="box b4"></div>
+        </div>
+    </div>
+
+    <!-- .container>.b$.box#kru-${Niyanta-$}*5 -->
+</body>
+</html>
