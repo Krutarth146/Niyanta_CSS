@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 4px solid red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex short Property */
+            /* flex-flow: hW ; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            justify-content: space-evenly;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 4px solid blue;
+            font-size: 30px;
+            font-weight: 700;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .b1{
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+
+        .b2{
+            /* flex-shrink: 2; */
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+        <div class="box b5">5</div>
+    </div>
+</body>
+</html>
