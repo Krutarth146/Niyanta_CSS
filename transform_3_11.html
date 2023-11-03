@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Property</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin: 300px auto;
+            /* transform: rotate(45deg); */
+            /* transform: scalex(5); */
+            transition: all 2s ease 0s;
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transition-timing-function: cubic-bezier(0.075, 0.60, 0.165, 0.5); */
+            /* transform: translatey(400px); */
+            
+        }
+        
+        .container:hover{
+            transform: translate(-150px, -100px);
+            width: 300px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
