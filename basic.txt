@@ -1,0 +1,49 @@
+1).<strong></strong>---> bold/importance Text
+2).<b></b>-->bold Text
+3).<br> or <br/>--line break or blank line
+4).<i></i>--->Italic Text
+5).<u></u>--->Underline Text
+6).<em></em>-->Italic/importance Text
+7).<cite></cite>-->Italic/importance Text
+8).<strike></strike>-->overline Text
+9).<mark></mark>--->Highlight Text
+10).<p></p>---> Paragraph 
+11).<del></del>--->overline/delete Text
+12).<ins></ins>--->insert/underline Text
+13).<pre></pre>--->preformated Text
+14).<sub></sub>--->subscript 
+15).<sup></sup>--->superSctipt
+16).<hr> or <hr/>--->Horizontal Line
+	Attributes:-1...Width=""  value(pixel/%)
+		    2...size=""  value(decimal)
+		    3...align=""  value(left/right/center)
+		    4...noshade.
+17).<small></small>--->Small text
+18).<big></big>--->Big Text
+19).<center></center>--->Center Text
+20).<marquee></marquee>--->movement Text/amination Text
+	Attributes:-1...behaviour=""  value(scroll/slide/alternate)
+		    2...direction=""  value(left/right/up/down)
+		    3...Width=""  value(pixel/%)
+		    4...height=""  value(pixel)
+		    5...bgcolor=""  value(colour name)
+		    6...hspace=""   value(pixel/%)///horizontal space
+		    7...vspace=""   value(pixel/%)///vertical space
+		    8...scrolldelay="" value(decimal)
+		    9...scrollamount="" value(decimal)
+		   10...loop=""  value(decimal)
+21).<img>-->add Image
+	Attributes:-1...src="" (Source File)
+		    2...alt=""  (Alternative Text)
+		    3...width=""   value(pixel/%)
+		    4...height=""  value(pixel/%)
+		    5...align=""   value(left /right)
+
+2) Shortcut Keys:-		    
+   document :
+	- shift key + 1 then Enter  key
+	- doc then Enter Key
+	- HTMl:5 then Enter
+ Convert  Multiline Paragraph/Multi Line Code :
+	alt Key+ Z
+Comment: cntrl key + /
