@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+
+        .box{
+            /* min-width: 200px; */
+            background-color: rgb(237, 183, 112);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            color: red;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        @media screen and (max-width: 600px){
+            .box{
+                flex-basis: 100%;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 900px){
+            .box{
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (min-width: 901px) and (max-width: 1200px){
+            .box{
+                flex-basis: calc(33.33% - 20px);
+                /* flex-basis: 400px; */
+            }
+        }
+
+        @media screen and (min-width: 1201px){
+            .box{
+                flex-basis: calc(25% - 20px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hello Niyanta!!</div>
+        <div class="box">Hello Royal!!</div>
+        <div class="box">Hello Techno!!</div>
+        <div class="box">Hello Techno!!</div>
+        <div class="box">Hello Techno!!</div>
+    </div>
+
+    <!-- .container>.box -->
+</body>
+</html>
