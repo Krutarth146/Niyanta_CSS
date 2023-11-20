@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Display</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+            display: grid;
+            padding: 20px;
+            /* row-gap: 15px; */
+            /* column-gap: 15px; */
+            gap: 15px;
+            /* grid-template-rows: 100px 200px 100px 100px 100px 100px; */
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .box{
+            border: 2px solid black;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+
+        .navbar{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .sidebar{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .item3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box navbar">Navbar</div>
+        <div class="box sidebar">sidebar</div>
+        <div class="box item3">Item3</div>
+        <div class="box">Item4</div>
+        <div class="box">Item5</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+</html>
